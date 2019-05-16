@@ -1,0 +1,54 @@
+﻿<Window x:Class="Final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="Rock Paper Scissors" Height="350" Width="525">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="49,47,0,0" VerticalAlignment="Top" Width="100" Name="userImage" Source=""/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="370,47,0,0" VerticalAlignment="Top" Width="100" Name="cpuImage" Source=""/>
+
+        <Button Content="SHOOT!" HorizontalAlignment="Left" Margin="214,220,0,0" VerticalAlignment="Top" Width="75" Name="btnShoot" Click="btnShoot_Click"/>
+
+        <Label Content="Wins:" HorizontalAlignment="Left" Margin="68,279,0,0" VerticalAlignment="Top" Name="lblUserWins1"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="108,279,0,0" VerticalAlignment="Top" Name="lblUserWins2" Width="27"/>
+        <Label Content="Wins:" HorizontalAlignment="Left" Margin="388,279,0,0" VerticalAlignment="Top" Name="lblcpuWins1"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="432,279,0,0" VerticalAlignment="Top" x:Name="lblcpuWins2" Width="27"/>
+        <Label Content="Make Selection:" HorizontalAlignment="Left" Margin="208,157,0,0" VerticalAlignment="Top" Name="lblMakeSelection"/>
+
+        <Image HorizontalAlignment="Left" Height="145" Margin="181,10,0,0" VerticalAlignment="Top" Width="145" Name="Title" Source="images\RPS clear.png"/>
+        <Image HorizontalAlignment="Left" Height="11" Margin="92,156,0,0" VerticalAlignment="Top" Width="11" Name="count1" Source="" RenderTransformOrigin="1.27,-0.407">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="19.954"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="User:" HorizontalAlignment="Left" Margin="74,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPU:" HorizontalAlignment="Left" Margin="405,21,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="11" Margin="418,156,0,0" VerticalAlignment="Top" Width="11" x:Name="count2" Source="" RenderTransformOrigin="1.27,-0.407">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="19.954"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Best out of 3" HorizontalAlignment="Left" Margin="213,279,0,0" VerticalAlignment="Top" Name="lblBest"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="229,250,0,0" VerticalAlignment="Top" Name="lblResult" Height="29" Width="46" FontSize="16"/>
+        <RadioButton Content="Rock" HorizontalAlignment="Left" Margin="167,190,0,0" VerticalAlignment="Top" Name="rdlRock" Checked="rdlRock_Checked"/>
+        <RadioButton Content="Paper" HorizontalAlignment="Left" Margin="229,190,0,0" VerticalAlignment="Top" Name="rdlPaper" Checked="rdlPaper_Checked"/>
+        <RadioButton Content="Scissor" HorizontalAlignment="Left" Margin="299,190,0,0" VerticalAlignment="Top" Name="rdlScissor" Checked="rdlScissor_Checked"/>
+
+
+
+
+    </Grid>
+</Window>
